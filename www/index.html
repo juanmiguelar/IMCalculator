@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <title>IMC calculator</title>
+    <link rel="stylesheet" href="estilos.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+
+    <div class="fondo">
+      <br><br>
+      <table>
+        <thead>
+          <tr>
+            <td>IMC</td> <td>Estado Nutricional</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr> <td>< 18.5</td> <td>Bajo Peso</td> </tr>
+          <tr> <td>18.5 - 24.9</td> <td>Normal</td> </tr>
+          <tr> <td>25.0 - 29.9</td> <td>Sobrepeso</td> </tr>
+          <tr> <td>30.0 - 34.9</td> <td>Obesidad I</td> </tr>
+          <tr> <td>35.0 - 39.9</td> <td>Obesidad II</td> </tr>
+          <tr> <td>40.0 - 49.9</td> <td>Obesidad Mórbida</td> </tr>
+          <tr> <td>> 50</td> <td>Súper Obesidad</td> </tr>
+        </tbody>
+      </table>
+        <br><br>
+      <form id="calc">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso">  Kg
+
+        <br><br>
+
+        <label for="talla">Talla</label>
+        <input type="text" id="talla">  m
+
+        <br><br>
+
+        <input id="submit" type="submit" value="Calcular IMC">
+      </form>
+
+    <p id="respuesta"></p>
+
+    </div>
+
+  <script src="jquery.min.js"></script>
+  <script type="text/javascript" src="calculador.js"></script>
+  </body>
+</html>
