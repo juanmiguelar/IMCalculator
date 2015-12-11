@@ -87,6 +87,21 @@ table {
   font-weight: bold;
 }
 
+#titulo{
+  text-shadow:1px 3px 8px rgba(255,71,224,1);
+  font-weight:normal;
+  color:#000000;
+  background-color:#FFD9E9;
+  border: 17px inset #B53877;
+  letter-spacing:0pt;
+  word-spacing:3pt;
+  font-size:22px;
+  text-align:center;
+  font-family:comic sans, comic sans ms, cursive, verdana, arial, sans-serif;
+  line-height:2;
+}
+
+
 @media screen and (max-width: 400px) {
   input{
     width: 50%;
