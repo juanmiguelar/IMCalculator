@@ -1,58 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>IMC calculator</title>
-    <link rel="stylesheet" href="estilos.css" media="screen" title="no title" charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-  </head>
-  <body>
-
-    <div id="fondo" class="contenedor">
-      <br><br>
-      <table class="main">
-        <thead>
-          <tr>
-            <td>IMC</td> <td>Estado Nutricional</td>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr> <td>< 18.5</td> <td>Bajo Peso</td> </tr>
-          <tr> <td>18.5 - 24.9</td> <td>Normal</td> </tr>
-          <tr> <td>25.0 - 29.9</td> <td>Sobrepeso</td> </tr>
-          <tr> <td>30.0 - 34.9</td> <td>Obesidad I</td> </tr>
-          <tr> <td>35.0 - 39.9</td> <td>Obesidad II</td> </tr>
-          <tr> <td>40.0 - 49.9</td> <td>Obesidad Mórbida</td> </tr>
-          <tr> <td>> 50</td> <td>Súper Obesidad</td> </tr>
-        </tbody>
-      </table>
-        <br>
-          <section id="respuesta"></section>
-        <br>
-      <form id="calc">
-        <label for="peso">Peso</label>
-        <input type="text" id="peso">
-        <label for="peso"> Kg</label>
-
-        <br><br>
-
-        <label for="talla">Talla</label>
-        <input type="text" id="talla">
-        <label for="talla"> m</label>
-        <br><br>
-
-        <input type="submit" value="Calcular IMC">
-      </form>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Nutricionista</title>
+  <link rel="stylesheet" href="css/estilos.css" media="screen" title="no title" charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+</head>
+<body id="body-index">
+  <div class="contenedor">
+    <h1 id="titulo">Cálculos nutricionales</h1>
+    <table>
+      <tr>
+        <td><a href="imc.html"><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+      </tr>
+      <tr>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+        <td><a href=""><img src="img/IMC.png" alt=""></a></td>
+      </tr>
+    </table>
   </div>
-
-  <script src="jquery.min.js"></script>
-  <script type="text/javascript" src="calculador.js"></script>
-  <script type="text/javascript" src="js/index.js"></script>
-  <script type="text/javascript">
-      app.initialize();
-  </script>
-  </body>
+</body>
 </html>

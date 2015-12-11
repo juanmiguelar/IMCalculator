@@ -38,8 +38,18 @@ input{
   font-size: 28px;
 }
 
-body{
-  background: url(fresas.png) repeat;
+#body-imc{
+  background: url("fresas.png") repeat;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+#body-index{
+  background: url("nutricion_servicios.jpg") repeat;
   text-align: center;
 }
 
