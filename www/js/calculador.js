@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   talla.click(
     function(){
-      var rtalla = prompt("Ingresa el talla");
+      var rtalla = prompt("Ingresa la talla");
       if (rtalla != null) {
         talla.val(rtalla);
       }
