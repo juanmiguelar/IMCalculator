@@ -20,7 +20,7 @@ $(document).ready(function(){
     function(){
       var rtalla = prompt("Ingresa tu peso");
       if (rtalla != null) {
-        talla.val(rpeso);
+        talla.val(rtalla);
       }
     }
   );
