@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   peso.click(
     function(){
-      var rpeso = prompt("Ingresa tu peso");
+      var rpeso = prompt("Ingresa el peso");
       if (rpeso != null) {
         peso.val(rpeso);
       }
@@ -18,7 +18,7 @@ $(document).ready(function(){
 
   talla.click(
     function(){
-      var rtalla = prompt("Ingresa tu talla");
+      var rtalla = prompt("Ingresa el talla");
       if (rtalla != null) {
         talla.val(rtalla);
       }
@@ -44,7 +44,10 @@ $(document).ready(function(){
     // Restringe a solo dos decimales
     imc = imc.toFixed(2);
     // Mostramos la respuesta
-    respuesta.html("El IMC es de: " + imc + " <br> El estado es: " + clasificar(imc));
+    //
+    respuesta.html(
+      "<center><fieldset id=\"field-respuesta\"><legend id=\"leg-respuesta\">Respuesta</legend><p>El IMC es de: " + imc + " <br> El estado es: " + clasificar(imc) + "</p> </fieldset></center>"
+    );
   } else{
    // Mostramos la respuesta
    respuesta.html("Ingresa los datos por favor");
