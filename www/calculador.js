@@ -4,6 +4,27 @@ $(document).ready(function(){
   // Seleccionar el formulario y el campo de respuesta
   var form = $("#calc");
   var respuesta = $("#respuesta");
+  var peso = $("#peso");
+  var talla = $("#talla");
+
+  peso.click(
+    function(){
+      var rpeso = prompt("Ingresa tu peso");
+      if (rpeso != null) {
+        peso.val(rpeso);
+      }
+    }
+  );
+
+  talla.click(
+    function(){
+      var rtalla = prompt("Ingresa tu peso");
+      if (rtalla != null) {
+        talla.val(rpeso);
+      }
+    }
+  );
+
 
   // Cuando el usuario haga submit en el formulario
   form.submit(function(e){
